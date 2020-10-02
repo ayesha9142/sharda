@@ -9,19 +9,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style2.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script async defer
-           src="https://maps.googleapis.com/maps/api/js?v=3">
-        </script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+
 <style>
 
    .testimonial-section {
@@ -88,25 +78,47 @@ background: #f6b93b;
 border-color: #f6b93b !important;
 transition: all 0.4s ease 0s;
 }
-.full-screen{
-  width: 750px;    
-  height: auto;
-  
-}
-.full-screen video {
-  /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
+
+@media screen and (max-width: 992px) {
+  .fullscreen video{
+ min-width: 100%; 
   min-height: 100%; 
 
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
+}
+}
 
-  /* Center the video */
+@media screen and (max-width: 992px) {
+  .flip-card-front img{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    
+
+  }
+}
+@media screen and (max-width: 992px) {
+  .bubble img{
+    width: 15vw;
+    height: 15vw;
+    
+
+  }
+}
+
+/* .fullscreen video {
+  
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+} */
+@media screen and (max-width: 992px) {
+  .fullscreen video{
+   height: 170vh;
+    }
 }
 #overlayText {
  position:absolute;
@@ -141,8 +153,8 @@ margin-bottom: -40px;
 
  .bgimg-1 {
   background-image: url("SET.jpeg");
-  min-height: height: 450px;;
-  min-width: 50vw;
+  height: 950vw;
+  width: 50vw;
    position: relative;
   background-attachment: fixed;
   background-position: cover;
@@ -263,6 +275,7 @@ margin-bottom: -40px;
       transform: translateX(-200px);
     }
   }
+
   
 </style>
 <body>
@@ -308,9 +321,9 @@ margin-bottom: -40px;
   <!--Nav-->
 
 <!--Header Video-->
-<div class="fullscreen">
+<div class="fullscreen" >
 
-  <video autoplay muted loop id="myVideo" style="width: 100vw; height: auto;">
+  <video autoplay muted loop id="myVideo"  style="width: 100vw; height: auto;"> 
     <source src="bgsharda.mp4" type="video/mp4">
   </video> </div>
   <div class="overlayText">
@@ -322,7 +335,7 @@ margin-bottom: -40px;
  
 
   <!--Dean Sir SET -->
-  <div class="content">
+  
  
 
 <div class="container" style="color: #777;background-color:;text-align:center;padding:50px 80px;text-align: justify; padding-right: 0px;">
@@ -331,8 +344,8 @@ margin-bottom: -40px;
 
            <div class="flip-card" >
                <div class="flip-card-inner">
-                   <div class="flip-card-front">
-                      <img src="dean.png" alt="Dean" class="img-responsive" width="300" height="336" style="top: 50%">
+                   <div class="flip-card-front" style="background-color: white;">
+                      <img src="dean.png" alt="Dean" class="img-responsive"  style="top: 50%; " >
                    </div>
                 <div class="flip-card-back" style="padding: 3vw;">
                    <h1 style="font-size: 2vw;">Dr. Parma Nand</h1> 
@@ -344,8 +357,9 @@ margin-bottom: -40px;
     </div>
     
      <div class="col-sm-8" >
-       <span  style="font-size:1vw; background-color: black; padding: 5px; color: white; ">Dean, School of Engineering and Technology</span>
-       <p style="font-size: 1vw; background-color: white">He is member Executive Council of IEEE UP section (R-10), member Executive Committee IEEE Computer and Signal Processing Society, member Exec. India council Computer Society, member Executive Council Computer Society of India, Noida section and has acted as an observer in many IEEE conferences. He is also having active memberships of ACM, IEEE, CSI, ACEEE, ISOC, IAENG, and IASCIT. He is life time member of Soft Computing Research Society (SCRS) and ISTE.
+       <span  style="font-size:2vh; background-color: black; padding: 3vw; color: white; ">Dean, School of Engineering and Technology</span>
+       <div class="content">
+       <p style="font-size: 1vw; background-color: white"><br><br>He is member Executive Council of IEEE UP section (R-10), member Executive Committee IEEE Computer and Signal Processing Society, member Exec. India council Computer Society, member Executive Council Computer Society of India, Noida section and has acted as an observer in many IEEE conferences. He is also having active memberships of ACM, IEEE, CSI, ACEEE, ISOC, IAENG, and IASCIT. He is life time member of Soft Computing Research Society (SCRS) and ISTE.
 
 He has delivered many invited/key notes talks at International & National Conferences/ Workshops/Seminars in India & abroad. He has published more than 50 papers in peer reviewed international/national journals and conferences. He has also published number of book chapters in reputed publications like Springer Berlin Heidelberg. He has reviewed no. of books for publications like Tata McGraw-Hill, Galgotias Publications etc. and papers in journals of international repute.  He is an active member of advisory/technical program committee of reputed International/National conferences & reviewer of number of reputed Journals e.g. Springer, Elsevier Journal Computers & Electrical Engineering. His research interest includes Computer Graphics, Algorithm, Distributed Computing and Wireless and Sensor networking. He has successfully completed number of government funded projects. He has spearheaded Ist IEEE International Conference on Computing, Communication & Automation, May 15-16, 2015 at Galgotias University (www.iccca2015.com), 2nd IEEE International Conference on Computing, Communication & Automation, April 29-30, 2016 at Galgotias University (www.iccca2016.com), 3rd IEEE International Conference on Computing, Communication & Automation, May 5-6, 2017 at Galgotias University (www.iccca.in).
 <a href="https://www.sharda.ac.in/faculty/details/parma-nand">Read More..</a></p></div >
@@ -355,7 +369,7 @@ He has delivered many invited/key notes talks at International & National Confer
 <!--Dean Sir SET -->
 
   <!--Department -->
-<div class="bgimg-1" style="background-color: blue;">
+<div class="bgimg-1" style="background-color:#00BFFF ;">
   <span class="text" style="font-size: 5vw;">DEPARTMENT</span>
   
      <div class="bubbles">
@@ -438,12 +452,12 @@ He has delivered many invited/key notes talks at International & National Confer
  </div>
  <div class="content">
   <div style="padding: 2vw; text-align: center;">
-    <p >The School of Engineering and technology (SET) is an open platform for diverse voices where teaching runs parallel to the real world and students are groomed to join the global workforce. SET is distinguished as one of the top-ranked engineering schools in India. The students at SET benefit through the professional grooming of renowned faculty and industry experts having experience of tackling pressing engineering problems. Students discover their passion in one of the various offered Engineering majors at the School of Engineering and technology. 
+    <p style="font-size: 1vw; padding: 3vw;">The School of Engineering and technology (SET) is an open platform for diverse voices where teaching runs parallel to the real world and students are groomed to join the global workforce. SET is distinguished as one of the top-ranked engineering schools in India. The students at SET benefit through the professional grooming of renowned faculty and industry experts having experience of tackling pressing engineering problems. Students discover their passion in one of the various offered Engineering majors at the School of Engineering and technology. 
 
     A student-centric pedagogy, project-based approach and design-driven curriculum provides students with an inclination for complex problem solving, design, innovation, and a passion for learning.
 
     The mission of the School of Engineering and technology through its various programmes is to educate well-integrated individuals who possess technical and social competence to succeed in professional arenas and design solutions for global problems.
-  </p>
+  
 </br>
 -SET Bagged ‘Best Innovative Engineering School in North Award by Innovative Education Awards in the year 2017</br>
 -ISO 9001-2001 Certified Research & Technology Development Centre to stimulate high-end technological research and analysis skills among students.</br>
@@ -576,8 +590,8 @@ He has delivered many invited/key notes talks at International & National Confer
 <div style="border: 5px solid   #A0522D;
   padding: 50px;
   margin: 70px; color: "><div class="content" >
-  <h1  style="text-align: center; font-size: 2vw;font-family: EpicRide,serif;">Sharda University Map</h1></div>
-     <p  style="text-align:center; font-family: 'Tangerine', serif; font-size: 2vw;">Beyond Boundaries</p>
+  <h1  style="text-align: center; font-size: 3vw;font-family: 'Cormorant Garamond', serif;">Sharda University Map</h1></div>
+     <p  style="text-align:center; font-family: 'Lobster', cursive; font-size: 2vw;">Beyond Boundaries</p>
 </div>
 </div>
 
@@ -602,12 +616,13 @@ He has delivered many invited/key notes talks at International & National Confer
     <center><div class="loader">THE.WORLD.IS.HERE</br>WHERE.ARE.YOU.</div>
 
   
-   <h3 id="contact">Contact Us</h3>
+   <h3 id="contact" style="font-family: 'Lobster', cursive; ">Contact Us<br></h3>
+   <br>
    <i class="fa fa-phone" aria-hidden="true">+91-120-4570000, +91-120-4060210, +91-120-4060211</i>
 </br>___________________________________</br>
 <span style="font-size: 20px;"><i class="fa fa-envelope" aria-hidden="true"> admission@sharda.ac.in</i> </span>
 </br>___________________________________</br>
-<span style="font-size: 30px;"><i class="fa fa-eye" aria-hidden="true"><a href="https://www.sharda.ac.in/vtour/tour.html?startscene=0&startactions=lookat(5.99,24.13,120,0,0);">  Virtual View</span></a></i>  
+<span style="font-size: 30px; font-family: 'Lobster', cursive;"><i class="fa fa-eye" aria-hidden="true"><a href="https://www.sharda.ac.in/vtour/tour.html?startscene=0&startactions=lookat(5.99,24.13,120,0,0);">  Virtual View</span></a></i>  
 
 <div id="programme" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -620,9 +635,9 @@ He has delivered many invited/key notes talks at International & National Confer
   </div>
 </div>
 </br></br></br>
-<h2>SET</h2>
-<p >School Of Engineering And Technology.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Programme</span>
+<h2 style="font-family: 'Cormorant Garamond', serif;">SET</h2>
+<p style="font-family: 'Lobster', cursive;">School Of Engineering And Technology.</p>
+<span style="font-size:30px;cursor:pointer font-family: 'Cormorant Garamond', serif;" onclick="openNav()">&#9776; Programme</span>
 
 <script>
 function openNav() {
@@ -646,7 +661,7 @@ function closeNav() {
   padding: 50px;
   margin: 70px;color: ">
 <h1  style="text-align:center; font-family: 'Tangerine', serif; ">Meet Our Faculties</h1>
-   <div class="content"> <p style="text-align: center;">At Sharda University you’ll be surrounded by teachers and mentors who are leading experts in their chosen fields.Our professors are committed to students and encourage and inspire them to think globally and critically.</p></div></div>
+   <div class="content"> <p style="text-align: center; font-size: 1vw;">At Sharda University you’ll be surrounded by teachers and mentors who are leading experts in their chosen fields.Our professors are committed to students and encourage and inspire them to think globally and critically.</p></div></div>
 <iframe src="aa.html" width="100%" height="100%" style="border:none;"></iframe>
 <!--Faculties-->
 
@@ -677,7 +692,7 @@ function closeNav() {
 <!--Testimonial Section -->
 <div class="testimonial-section" style="padding-bottom: 5vw;" >
   <div class="inner-width">
-    <h2 style="text-align: center;">Testimonials</h2>
+    <h2 style="text-align: center;font-family: 'Satisfy', cursive;">Testimonials</h2>
     <h1>What Our Students Say</h1>
     <div class="testimonial-pics">
       <img src="https://www.sharda.ac.in/attachments/testimonial_images/thumbnail/Tanveer_Mech.jpg" class="active" alt="test-1">
@@ -685,22 +700,28 @@ function closeNav() {
       <img src="https://www.sharda.ac.in/attachments/testimonial_images/thumbnail/Md__Suyaib_CSE_IN.jpeg" alt="test-3">
       <img src="https://www.sharda.ac.in/attachments/testimonial_images/thumbnail/Adeeba_CSE_IN.jpeg" alt="test-4">
       </div>
-      <div class="content">
+      
      <div class="testimonial-contents" >
        <div class="testimonial active" id="test-1">
-         <p>It was my immense luck and fortune to be the part of Sharda University where I can grow. The entire faculty and department leaves no stone unturned to shape one\'s future. My four years at Sharda have been a wonderful experience of learning with prolific exposure to outside. Huge respect, love and devotion for entire faculty members and department. It\'s their efforts that make me to count myself into better professionals.</p>
-       <span class="description">Tanveer Ahmad</span>
-     </div>
+         <div class="content"><p>It was my immense luck and fortune to be the part of Sharda University where I can grow. The entire faculty and department leaves no stone unturned to shape one\'s future. My four years at Sharda have been a wonderful experience of learning with prolific exposure to outside. Huge respect, love and devotion for entire faculty members and department. It\'s their efforts that make me to count myself into better professionals.</p></div>
+        <span class="description" style="font-family: 'Tangerine', serif; font-size: 2vw;"><b>Tanveer Ahmad</b></span>
+        </div>
+    
      <div class="testimonial" id="test-2">
+      <div class="content">
          <p>Sharda University has been a great contributor to the development of my personality. I have established my leadership, time management and team skills and have also been able to advance these skills to the whole new augment level. The infrastructure of Sharda University is one of the finest in the NCR region is what stands out the most. The best thing about this University is the cross-culture interaction between students from various parts of the world. The professors here make the university what it is today. With an attitude of being ever ready to help, and not only delivering classroom teachings, but they are also the pillars of the learning gained from this esteemed university and this is a treasure for life.</p>
-         <span class="description">Aakash Sharma</span>
+       </div>
+         <span class="description" style="font-family: 'Tangerine', serif; font-size: 2vw;"><b>Aakash Sharma</b></span>
      </div>
      <div class="testimonial" id="test-3">
-         <p>My four years at Sharda were great and a memory to cherish for lifetime. It was full of learning and grooming oneself. It gave me an opportunity to meet different kind of people and learned many things. I am thankful to all the faculties, mentors and entire SET as well as placement cell. Overall it was a great experience and lifetime memory at Sharda.</p><span class="description">Md Suyaib Ahmad</span>
+      <div class="content">
+         <p>My four years at Sharda were great and a memory to cherish for lifetime. It was full of learning and grooming oneself. It gave me an opportunity to meet different kind of people and learned many things. I am thankful to all the faculties, mentors and entire SET as well as placement cell. Overall it was a great experience and lifetime memory at Sharda.</p>
+       </div><span class="description" style="font-family: 'Tangerine', serif; font-size: 2vw;"><b>Md Suyaib Ahmad</b></span>
      </div>
      <div class="testimonial" id="test-4">
-         <p>Sharda University and SET faculties have put in all the efforts to groom us and make us corporate professionals. It was a wonderful experience at Sharda University.</p>
-         <span class="description">Adeeba Fatima</span>
+      <div class="content">
+         <p>Sharda University and SET faculties have put in all the efforts to groom us and make us corporate professionals. It was a wonderful experience at Sharda University.</p></div>
+         <span class="description" style="font-family: 'Tangerine', serif; font-size: 2vw;"><b>Adeeba Fatima</b></span>
      </div>
 
      </div>
@@ -734,7 +755,7 @@ function closeNav() {
     <!--Cursor Animation -->
 
   <!--Recruiters -->
-<div class="bgimg-1" style="">
+<div class="bgimg-1" style="background-color: #00BFFF">
  <span class="text" style="font-size: 5vw;"><a href="https://www.sharda.ac.in/placements#our-recruiters">Our Recruiters</a></span>
   
      <div class="bubbles">
